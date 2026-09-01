@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+/* ─────────────────────────────
+   BASE RESET + THEME
+───────────────────────────── */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #000000;
+  color: #ffffff;
+  font-family: var(--font-raleway), sans-serif;
+  overflow-x: hidden;
+}
+
+/* ─────────────────────────────
+   SCROLLBAR
+───────────────────────────── */
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #08080c;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #202020;
+  border-radius: 10px;
+}
+
+/* ─────────────────────────────
+   INPUT FOCUS
+───────────────────────────── */
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #7c3aed;
+  box-shadow: 0 0 0 2px rgb(124 58 237 / 35%);
+}
+
+/* ─────────────────────────────
+   SELECTION
+───────────────────────────── */
+
+::selection {
+  background: #7c3aed;
+  color: #fff;
+}
